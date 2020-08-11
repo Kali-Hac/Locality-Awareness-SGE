@@ -58,4 +58,4 @@ Please see ```evaluate.py``` for more details.
 
 ## License
 
-SGE-LA-LCL is released under the MIT License.
+Locality-Awareness-SGE is released under the MIT License.
