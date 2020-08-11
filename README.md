@@ -49,8 +49,7 @@ python evaluate.py --dataset BIWI --best_model rev_rec
 To evaluate the already trained model saved in ```Models/AGEs_RN_models/model_name```, run:
 
 ```bash
-
-python evaluate.py --dataset BIWI --RN_dir model_name
+python evaluate.py --RN_dir model_name
 
 ```
 
