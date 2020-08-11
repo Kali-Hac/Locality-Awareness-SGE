@@ -24,23 +24,29 @@ https://www.researchgate.net/publication/275023745_Kinect_Gait_Biometry_Dataset_
 To (1) train the self-supervised gait encoding model to obtain CAGEs and (2) validate the effectiveness of CAGEs for person Re-ID on a specific dataset with a recognition network,  simply run the following command: 
 
 ```bash
-# --attention: [LA, BA]  --dataset [BIWI, IAS, KGBD, KS20]  
-# --length [4, 6, 8, 10] --t [0.05, 0.1 (for BIWI/IAS/KS20), 0.5 (for KGBD), 0.8, 1.0] 
-# --train_flag [1 (for training gait encoding models+RN), 0 (for training RN)] 
-# --model [rev_rec, prediction, sorting, rev_rec_plus] --gpu 0
-
 python train.py --dataset BIWI
+
+# Default options: --attention LA --dataset BIWI --length 6 --t 0.1 --train_flag 1 --model rev_rec --gpu 0
+# --attention: [LA, BA]  
+# --dataset [BIWI, IAS, KGBD, KS20]  
+# --length [4, 6, 8, 10] 
+# --t [0.05, 0.1 (for BIWI/IAS/KS20), 0.5 (for KGBD), 0.8, 1.0] 
+# --train_flag [1 (for training gait encoding models+RN), 0 (for training RN)] 
+# --model [rev_rec, prediction, sorting, rev_rec_plus] 
+# --gpu 0
+
 ```
 Please see ```train.py``` for more details.
 
 To print evaluation results (Re-ID Confusion Matrix / Rank-n Accuracy / Rank-1 Accuracy / nAUC) of the best model, run:
 
 ```bash
-# --dataset [BIWI, IAS, KGBD, KS20] --best_model [rev_rec, prediction, sorting, rev_rec_plus] 
 python evaluate.py --dataset BIWI --best_model rev_rec
 
+# --dataset [BIWI, IAS, KGBD, KS20] 
+# --best_model [rev_rec, prediction, sorting, rev_rec_plus] 
 ```
-To print evaluation results (Re-ID Confusion Matrix / Rank-n Accuracy / Rank-1 Accuracy / nAUC) of the model saved in ```Models/AGEs_RN_models/model_name```, run:
+To evaluate the already trained model saved in ```Models/AGEs_RN_models/model_name```, run:
 
 ```bash
 
