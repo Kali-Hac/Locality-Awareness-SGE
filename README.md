@@ -24,23 +24,27 @@ https://www.researchgate.net/publication/275023745_Kinect_Gait_Biometry_Dataset_
 To (1) train the self-supervised gait encoding model to obtain CAGEs and (2) validate the effectiveness of CAGEs for person Re-ID on a specific dataset with a recognition network,  simply run the following command: 
 
 ```bash
-# --attention: [ **LA**, BA]  --dataset [**BIWI**, IAS, KGBD, KS20]  --length [4, **6**, 8, 10] --t [0.05, **0.1** (for BIWI/IAS/KS20), 0.5 (for KGBD), 0.8, 1.0] 
-# --train_flag [**1** (for training gait encoding models+RN), 0 (for training RN)] --model [**rev_rec**, prediction, sorting, rev_rec_plus] --gpu **0**
+# --attention: [LA, BA]  --dataset [BIWI, IAS, KGBD, KS20]  
+# --length [4, 6, 8, 10] --t [0.05, 0.1 (for BIWI/IAS/KS20), 0.5 (for KGBD), 0.8, 1.0] 
+# --train_flag [1 (for training gait encoding models+RN), 0 (for training RN)] 
+# --model [rev_rec, prediction, sorting, rev_rec_plus] --gpu 0
 
 python train.py --dataset BIWI
 ```
 Please see ```train.py``` for more details.
 
-To print evaluation results (Re-ID Confusion Matrix / Rank-n Accuracy / Rank-1 Accuracy / nAUC) of person re-identification on the testing set, run:
+To print evaluation results (Re-ID Confusion Matrix / Rank-n Accuracy / Rank-1 Accuracy / nAUC) of the best model, run:
+
+```bash
+# --dataset [BIWI, IAS, KGBD, KS20] --best_model [rev_rec, prediction, sorting, rev_rec_plus] 
+python evaluate.py --dataset BIWI --best_model rev_rec
+
+```
+To print evaluation results (Re-ID Confusion Matrix / Rank-n Accuracy / Rank-1 Accuracy / nAUC) of the model saved in ```Models/AGEs_RN_models/model_name```, run:
 
 ```bash
 
-To evaluate the default best model, run this command:
-# --dataset [**BIWI**, IAS, KGBD, KS20] --best_model [**rev_rec**, prediction, sorting, rev_rec_plus] 
-python evaluate.py --dataset BIWI --best_model rev_rec
-
-To evaluate the model in ```Models/AGEs_RN_models/xxx```, run this command:
-python evaluate.py --dataset BIWI --RN_dir xxx
+python evaluate.py --dataset BIWI --RN_dir model_name
 
 ```
 
