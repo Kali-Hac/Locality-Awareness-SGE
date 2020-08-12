@@ -6,7 +6,7 @@ import matplotlib as mpl
 import copy
 import os
 from tensorflow.python.ops import rnn_cell_impl
-# mpl.use('Agg')
+# mpl.use('Agg') 
 # import matplotlib.pyplot as plt
 import os
 
