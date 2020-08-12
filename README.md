@@ -9,15 +9,14 @@ The codes are used to reproduce experimental results of the proposed Contrastive
 - Tensorflow 1.10.0 (GPU)
 
 ## Datasets
-We provide three already preprocessed datasets (BIWI, IAS, KGBD) on <br/>
-https://share.weiyun.com/5faKfq4 &nbsp; &nbsp; &nbsp; password：&nbsp; &nbsp; ma385h <br/>
-Two already trained models (BIWI, IAS) are saved in this repository, and all three models can be acquired on <br/>
-https://share.weiyun.com/5EBPkPZ &nbsp; &nbsp; &nbsp; password：&nbsp; &nbsp; 6xpj8r  <br/> 
+We provide four already preprocessed datasets (BIWI, IAS, KGBD, KS20) on <br/>
+https://pan.baidu.com/s/1FuESlFZkWL6UgARcuMCIVA &nbsp; &nbsp; &nbsp; password：&nbsp; &nbsp; gfij <br/>
+All the best models reported in our paper can be acquired on <br/>
+https://pan.baidu.com/s/1rfXkJUNG8Xv2JQ7a3vQNrQ &nbsp; &nbsp; &nbsp; password：&nbsp; &nbsp; 2229  <br/> 
 Please download the preprocessed datasets ``Datasets/`` and the model files ``Models/`` into the current directory. 
 <br/>
 
-The original datasets can be downloaded from: http://robotics.dei.unipd.it/reid/index.php/downloads (BIWI and IAS-Lab) <br/>
-https://www.researchgate.net/publication/275023745_Kinect_Gait_Biometry_Dataset_-_data_from_164_individuals_walking_in_front_of_a_X-Box_360_Kinect_Sensor (KGBD) 
+The original datasets can be downloaded here: [BIWI and IAS-Lab](http://robotics.dei.unipd.it/reid/index.php/downloads), [KGBD](https://www.researchgate.net/publication/275023745_Kinect_Gait_Biometry_Dataset_-_data_from_164_individuals_walking_in_front_of_a_X-Box_360_Kinect_Sensor)
  
 ## Usage
 
@@ -33,7 +32,7 @@ python train.py --dataset BIWI
 # --t [0.05, 0.1 (for BIWI/IAS/KS20), 0.5 (for KGBD), 0.8, 1.0] 
 # --train_flag [1 (for training gait encoding models+RN), 0 (for training RN)] 
 # --model [rev_rec, prediction, sorting, rev_rec_plus] 
-# --gpu 0
+# --gpu [0, 1, ...]
 
 ```
 Please see ```train.py``` for more details.
