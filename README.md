@@ -9,12 +9,12 @@ The codes are used to reproduce experimental results of the proposed Contrastive
 - Tensorflow 1.10.0 (GPU)
 
 ## Datasets
-We provide four already preprocessed datasets (BIWI, IAS, KGBD, KS20) on 
+We provide four already preprocessed datasets (BIWI, IAS, KGBD, KS20) on <br/>
 https://pan.baidu.com/s/1FuESlFZkWL6UgARcuMCIVA &nbsp; &nbsp; &nbsp; password：&nbsp; gfij <br/>
-All the best models reported in our paper can be acquired on 
+All the best models reported in our paper can be acquired on <br/> 
 https://pan.baidu.com/s/1sC0mjVTAhA5qq6I73rPA_g &nbsp; &nbsp; &nbsp; password：&nbsp; g3l3  <br/> 
 Please download the pre-processed datasets ``Datasets/`` and the model files ``Models/`` into the current directory. <br/><br/>
-We also provide the pre-trained gait encoding models on 
+We also provide the pre-trained gait encoding models on <br/> 
 https://pan.baidu.com/s/1aH0dBY5kpTaMVR9XxM89iw &nbsp; &nbsp; &nbsp; password：&nbsp; xkax  <br/> 
 Please download the pre-trained gait encoding models into the directory ``Models/``. 
 <br/>
