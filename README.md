@@ -31,7 +31,7 @@ python train.py --dataset BIWI
 # --length [4, 6, 8, 10] 
 # --t [0.05, 0.1 (for BIWI/IAS/KS20), 0.5 (for KGBD), 0.8, 1.0] 
 # --train_flag [1 (for training gait encoding models+RN), 0 (for training RN)] 
-# --model [rev_rec, prediction, sorting, rev_rec_plus] 
+# --model [rev_rec, prediction, sorting, rev_rec_plus] Note that "rev_rec_plus" will train three types of models simulatenously.
 # --gpu [0, 1, ...]
 
 ```
