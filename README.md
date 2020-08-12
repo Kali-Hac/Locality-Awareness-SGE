@@ -54,7 +54,7 @@ To evaluate the already trained model saved in ```Models/CAGEs_RN_models/model_n
 python evaluate.py --RN_dir model_name
 
 ```
-
+ 
 Please see ```evaluate.py``` for more details.
 
 
