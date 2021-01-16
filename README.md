@@ -1,16 +1,20 @@
 # A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification
 By Haocong Rao, Siqi Wang, Xiping Hu, Mingkui Tan, Huang Da, Jun Cheng, Bin Hu, and Xinwang, Liu.
 ## Introduction
-This is the official implementation of the self-supervised gait encoding approach presented by "A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification".
+This is the official implementation of the self-supervised gait encoding approach presented by "A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification", which is the extended version of our IJCAI-2020 conference [paper](https://www.ijcai.org/proceedings/2020/0125.pdf).
 The codes are used to reproduce experimental results of the proposed Contrastive Attention-basd Gait Encodings (CAGEs) in the [paper](https://arxiv.org/abs/2009.03671).
+
+![image](https://github.com/Kali-Hac/Locality-Awareness-SGE/blob/master/img/overview.png)
+
+Abstract: Person re-identification (Re-ID) via gait features within 3D skeleton sequences is a newly-emerging topic with several advantages. Existing solutions either rely on hand-crafted descriptors or supervised gait representation learning. This paper proposes a self-supervised gait encoding approach that can leverage unlabeled skeleton data to learn gait representations for person Re-ID. Specifically, we first create self-supervision by learning to reconstruct unlabeled skeleton sequences reversely, which involves richer high-level semantics to obtain better gait representations. Other pretext tasks are also explored to further improve self-supervised learning. Second, inspired by the fact that motion's continuity endows adjacent skeletons in one skeleton sequence and temporally consecutive skeleton sequences with higher correlations (referred as locality in 3D skeleton data), we propose a locality-aware attention mechanism and a locality-aware contrastive learning scheme, which aim to preserve locality-awareness on intra-sequence level and inter-sequence level respectively during self-supervised learning. Last, with context vectors learned by our locality-aware attention mechanism and contrastive learning scheme, a novel feature named Constrastive Attention-based Gait Encodings (CAGEs) is designed to represent gait effectively. Empirical evaluations show that our approach significantly outperforms skeleton-based counterparts by 15-40% Rank-1 accuracy, and it even achieves superior performance to numerous multi-modal methods with extra RGB or depth information.
 
 ## Requirements
 - Python 3.5
 - Tensorflow 1.10.0 (GPU)
 
 ## Datasets
-We provide four already preprocessed datasets (BIWI, IAS, KGBD, KS20) on <br/>
-https://pan.baidu.com/s/1FuESlFZkWL6UgARcuMCIVA &nbsp; &nbsp; &nbsp; password：&nbsp; gfij <br/>
+We provide four already pre-processed datasets (BIWI, IAS, KGBD) with various sequence lengths on <br/>
+https://pan.baidu.com/s/1u5PvudgABe63A43NuaDBpA &nbsp; &nbsp; &nbsp; password：&nbsp;  ttyp <br/>
 All the best models reported in our paper can be acquired on <br/> 
 https://pan.baidu.com/s/1sC0mjVTAhA5qq6I73rPA_g &nbsp; &nbsp; &nbsp; password：&nbsp; g3l3  <br/> 
 Please download the pre-processed datasets ``Datasets/`` and the model files ``Models/`` into the current directory. <br/><br/>
@@ -20,6 +24,8 @@ Please download the pre-trained gait encoding models into the directory ``Models
 <br/>
 
 The original datasets can be downloaded here: [BIWI and IAS-Lab](http://robotics.dei.unipd.it/reid/index.php/downloads), [KGBD](https://www.researchgate.net/publication/275023745_Kinect_Gait_Biometry_Dataset_-_data_from_164_individuals_walking_in_front_of_a_X-Box_360_Kinect_Sensor), [KS20.](http://vislab.isr.ist.utl.pt/datasets/#ks20)
+ 
+Note: The access to the Vislab Multi-view KS20 dataset is available upon request. If you have signed the license agreement and been granted the right to use it, please contact me and I will share the pre-processed KS20 data.
  
 ## Usage
 
