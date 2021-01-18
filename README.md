@@ -13,7 +13,7 @@ Abstract: Person re-identification (Re-ID) via gait features within 3D skeleton 
 - Tensorflow 1.10.0 (GPU)
 
 ## Datasets
-We provide four already pre-processed datasets (BIWI, IAS, KGBD) with various sequence lengths on <br/>
+We provide three already pre-processed datasets (BIWI, IAS, KGBD) with various sequence lengths on <br/>
 https://pan.baidu.com/s/1u5PvudgABe63A43NuaDBpA &nbsp; &nbsp; &nbsp; password：&nbsp;  ttyp <br/>
 All the best models reported in our paper can be acquired on <br/> 
 https://pan.baidu.com/s/1sC0mjVTAhA5qq6I73rPA_g &nbsp; &nbsp; &nbsp; password：&nbsp; g3l3  <br/> 
