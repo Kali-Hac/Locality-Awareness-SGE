@@ -64,10 +64,10 @@ python evaluate.py --RN_dir model_name
 Please see ```evaluate.py``` for more details.
 
 ## Application to Model-Estimated Skeleton Data 
-To extend our model to a large RGB-based dataset (CASIA B), we exploit pose estimation methods to extract 3D skeletons from videos of CASIA B as follows:
+To extend our model to a large RGB-based gait dataset (CASIA B), we exploit pose estimation methods to extract 3D skeletons from RGB videos of CASIA B as follows:
 - Step 1: Download [CASIA-B Dataset](http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp)
-- Step 2: Extract the 2D human pose keypoints by using [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
-- Step 3: Extract the 3D human pose keypoints by using [3DHumanPose](https://github.com/flyawaychase/3DHumanPose)
+- Step 2: Extract the 2D human body joints by using [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
+- Step 3: Estimate the 3D human body joints by using [3DHumanPose](https://github.com/flyawaychase/3DHumanPose)
 
 Here we thank (rijun.liao@gmail.com) for his contribution of extracting 3D skeleton data from CASIA B.
 
