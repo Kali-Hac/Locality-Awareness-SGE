@@ -90,7 +90,7 @@ python CVE-CASIA-B.py --view 0
 # --gpu [0, 1, ...]
 
 ```
-Please see ```CVE-CASIA-B``` for more details. <br/>
+Please see ```CVE-CASIA-B.py``` for more details. <br/>
 
 To (1) train the self-supervised gait encoding model to obtain sequence-level CAGEs (SC) and (2) validate the effectiveness of CAGEs for person Re-ID under **CME** setup, simply run the following command: 
 
@@ -105,7 +105,7 @@ python CME-CASIA-B.py --probe_type nm.nm
 # --gpu [0, 1, ...]
 
 ```
-Please see ```CME-CASIA-B``` for more details
+Please see ```CME-CASIA-B.py``` for more details
 
 ## License
 
