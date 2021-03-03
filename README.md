@@ -69,12 +69,12 @@ To extend our model to a large RGB-based dataset (CASIA B), we exploit pose esti
 - Step 2: Extract the 2D human pose keypoints by using [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
 - Step 3: Extract the 3D human pose keypoints by using [3DHumanPose](https://github.com/flyawaychase/3DHumanPose)
 
-Here we thank (rijun.liao@gmail.com) for providing the estimated 3D skeleton data corresponding to the original dataset, and you can contact with him for that.
+Here we thank (rijun.liao@gmail.com) for his contribution of extracting 3D skeleton data from CASIA B.
 
 We provide the already already pre-processed skeleton data of CASIA B dataset with various sequence lengths (20/30/40 for CVE setup, 50/60/70 for CME setup) on &nbsp; &nbsp; &nbsp;https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
 
-Please download the pre-processed datasets into the directory ``Datasets/`` <br/>
-Note: The data in ``CASIA/`` is use for Cross-View Evaluation (CVE) and The data in ``CASIA_match/`` is for Condition-based Matching Evaluation (CME).
+Please download the two pre-processed datasets into the directory ``Datasets/``. <br/>
+Note: ``CASIA/`` is used for Cross-View Evaluation (CVE) and ``CASIA_match/`` is for Condition-based Matching Evaluation (CME).
 
 ## Usage
 To (1) train the self-supervised gait encoding model to obtain frame-level CAGEs (AP) and (2) validate the effectiveness of CAGEs for person Re-ID under **CVE** setup, simply run the following command: 
