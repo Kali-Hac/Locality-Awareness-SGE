@@ -63,6 +63,50 @@ python evaluate.py --RN_dir model_name
  
 Please see ```evaluate.py``` for more details.
 
+## Application to Model-Estimated Skeleton Data 
+To extend our model to a large RGB-based dataset (CASIA B), we exploit pose estimation methods to extract 3D skeletons from videos of CASIA B as follows:
+- Step 1: Download [CASIA-B Dataset](http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp)
+- Step 2: Extract the 2D human pose keypoints by using [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
+- Step 3: Extract the 3D human pose keypoints by using [3DHumanPose](https://github.com/flyawaychase/3DHumanPose)
+
+We provide the already already pre-processed skeleton data of CASIA B dataset with various sequence lengths (20, 30 and 40 for CVE setup, 50, 60 and 70 for CME setup) on <br/>
+https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
+Please download the pre-processed datasets into the directory ``Datasets/`` <br/>
+
+Note: The data in ``CASIA/`` is use for Cross-View Evaluation (CVE) and The data in ``CASIA_match/`` is for Condition-based Matching Evaluation (CME).
+
+## Usage
+To (1) train the self-supervised gait encoding model to obtain frame-level CAGEs (AP) and (2) validate the effectiveness of CAGEs for person Re-ID under **CVE** setup, simply run the following command: 
+
+```bash
+python CVE-CASIA-B.py --view 0
+
+# Default options: --attention LA --dataset CASIA_B --length 20 --view 0 --t 0.15 --train_flag 1 --model rev_rec --gpu 0
+# --attention: [LA, BA]  
+# --length [20, 30, 40] 
+# --view [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+# --train_flag [1 (for training gait encoding models+RN), 0 (for training RN)] 
+# --model [rev_rec, prediction, sorting, rev_rec_plus] Note that "rev_rec_plus" will train three types of models sequentially.
+# --gpu [0, 1, ...]
+
+```
+Please see ```CVE-CASIA-B``` for more details. <br/>
+
+To (1) train the self-supervised gait encoding model to obtain sequence-level CAGEs (SC) and (2) validate the effectiveness of CAGEs for person Re-ID under **CME** setup, simply run the following command: 
+
+```bash
+python CME-CASIA-B.py --probe_type nm.nm
+
+# Default options: --attention LA --dataset CASIA_B --length 20 --probe_type nm.nm --t 0.15 --train_flag 1 --model rev_rec --gpu 0
+# --attention: [LA, BA]  
+# --length [20, 30, 40] 
+# --probe_type [nm.nm, cl.cl, bg.bg, cl.nm, bg.nm] 
+# --train_flag [1 (for training gait encoding models), 0 (for CME matching)] 
+# --model [rev_rec, prediction, sorting, rev_rec_plus] Note that "rev_rec_plus" will train three types of models sequentially.
+# --gpu [0, 1, ...]
+
+```
+Please see ```CME-CASIA-B``` for more details
 
 ## License
 
