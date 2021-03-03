@@ -74,7 +74,7 @@ Here we thank (rijun.liao@gmail.com) for his contribution of extracting 3D skele
 We provide already pre-processed skeleton data of CASIA B for Cross-View Evaluation (CVE) (f=20/30/40) and Condition-based Matching Evaluation (CME) (f=50/60/70) on
 &nbsp; &nbsp; &nbsp;https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
 Please download the two pre-processed datasets into the directory ``Datasets/``. <br/>
-Note: ``CASIA/`` is used for the CVE setup and ``CASIA_match/`` is for the CME setup. <\br>
+Note: ``CASIA/`` is used for the CVE setup and ``CASIA_match/`` is for the CME setup. 
 
 We also provide the pre-trained gait encoding models for CVE setup (f=20) and CME setup (f=50/60/70) on <br/> 
 https://pan.baidu.com/s/1qOxGRK86HaEXxJGaEdvBuQ &nbsp; &nbsp; &nbsp; password：&nbsp; phyk  <br/> 
