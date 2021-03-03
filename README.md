@@ -72,8 +72,12 @@ To extend our model to a large RGB-based gait dataset (CASIA B), we exploit pose
 Here we thank (rijun.liao@gmail.com) for his contribution of extracting 3D skeleton data from CASIA B.
 
 We provide already pre-processed skeleton data of CASIA B with various sequence lengths (20/30/40 for CVE setup, 50/60/70 for CME setup) on &nbsp; &nbsp; &nbsp;https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
-
 Please download the two pre-processed datasets into the directory ``Datasets/``. <br/>
+
+We also provide the pre-trained gait encoding models for CVE (f=20) and CME (f=50/60/70) setups on <br/> 
+https://pan.baidu.com/s/1qOxGRK86HaEXxJGaEdvBuQ &nbsp; &nbsp; &nbsp; password：&nbsp; phyk  <br/> 
+Please download the pre-trained gait encoding models into the directory ``Models/``.  <br/>
+
 Note: ``CASIA/`` is used for Cross-View Evaluation (CVE) and ``CASIA_match/`` is for Condition-based Matching Evaluation (CME).
 
 ## Usage
