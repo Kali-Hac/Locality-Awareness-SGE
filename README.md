@@ -105,7 +105,7 @@ python CME-CASIA-B.py --probe_type nm.nm
 # --gpu [0, 1, ...]
 
 ```
-Please see ```CME-CASIA-B.py``` for more details
+Please see ```CME-CASIA-B.py``` for more details 
 
 ## License
 
