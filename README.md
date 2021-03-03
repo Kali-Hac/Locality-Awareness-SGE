@@ -71,8 +71,8 @@ To extend our model to a large RGB-based gait dataset (CASIA B), we exploit pose
 
 Here we thank (rijun.liao@gmail.com) for his contribution of extracting 3D skeleton data from CASIA B.
 
-We provide already pre-processed skeleton data of CASIA B for Cross-View Evaluation (**CVE**) (f=20/30/40) and Condition-based Matching Evaluation (**CME**) (f=50/60/70) on
-&nbsp; &nbsp; &nbsp;https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
+We provide already pre-processed skeleton data of CASIA B for Cross-View Evaluation (**CVE**) (f=20/30/40) and Condition-based Matching Evaluation (**CME**) (f=50/60/70) on <br\>
+https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
 Please download the two pre-processed datasets into the directory ``Datasets/``. <br/>
 Note: ``CASIA/`` is used for the **CVE** setup and ``CASIA_match/`` is for the **CME** setup. 
 
