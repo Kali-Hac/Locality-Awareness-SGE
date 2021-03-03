@@ -71,14 +71,14 @@ To extend our model to a large RGB-based gait dataset (CASIA B), we exploit pose
 
 Here we thank (rijun.liao@gmail.com) for his contribution of extracting 3D skeleton data from CASIA B.
 
-We provide already pre-processed skeleton data of CASIA B with various sequence lengths (20/30/40 for CVE setup, 50/60/70 for CME setup) on &nbsp; &nbsp; &nbsp;https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
+We provide already pre-processed skeleton data of CASIA B for Cross-View Evaluation (CVE) (f=20/30/40) and Condition-based Matching Evaluation (CME) (f=50/60/70) on
+&nbsp; &nbsp; &nbsp;https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
 Please download the two pre-processed datasets into the directory ``Datasets/``. <br/>
+Note: ``CASIA/`` is used for the CVE setup and ``CASIA_match/`` is for the CME setup. <\br>
 
-We also provide the pre-trained gait encoding models for CVE (f=20) and CME (f=50/60/70) setups on <br/> 
+We also provide the pre-trained gait encoding models for CVE setup (f=20) and CME setup (f=50/60/70) on <br/> 
 https://pan.baidu.com/s/1qOxGRK86HaEXxJGaEdvBuQ &nbsp; &nbsp; &nbsp; password：&nbsp; phyk  <br/> 
 Please download the pre-trained gait encoding models into the directory ``Models/``.  <br/>
-
-Note: ``CASIA/`` is used for Cross-View Evaluation (CVE) and ``CASIA_match/`` is for Condition-based Matching Evaluation (CME).
 
 ## Usage
 To (1) train the self-supervised gait encoding model to obtain frame-level CAGEs (AP) and (2) validate the effectiveness of CAGEs for person Re-ID under **CVE** setup, simply run the following command: 
