@@ -68,8 +68,9 @@ To extend our model to a large RGB-based dataset (CASIA B), we exploit pose esti
 - Step 1: Download [CASIA-B Dataset](http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp)
 - Step 2: Extract the 2D human pose keypoints by using [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
 - Step 3: Extract the 3D human pose keypoints by using [3DHumanPose](https://github.com/flyawaychase/3DHumanPose)
+If you are interested in the estimated 3D skeleton data corresponding to the original dataset, please contact with (rijun.liao@gmail.com). 
 
-We provide the already already pre-processed skeleton data of CASIA B dataset with various sequence lengths (20, 30 and 40 for CVE setup, 50, 60 and 70 for CME setup) on <br/>
+We provide the already already pre-processed skeleton data of CASIA B dataset with various sequence lengths (20, 30 and 40 for CVE setup, 50, 60 and 70 for CME setup) on 
 https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
 Please download the pre-processed datasets into the directory ``Datasets/`` <br/>
 
