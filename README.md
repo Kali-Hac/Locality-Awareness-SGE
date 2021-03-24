@@ -2,7 +2,7 @@
 By Haocong Rao, Siqi Wang, Xiping Hu, Mingkui Tan, Huang Da, Jun Cheng, Bin Hu, and Xinwang, Liu.
 ## Introduction
 This is the official implementation of the self-supervised gait encoding approach presented by "A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification", which is the extended version of our IJCAI-2020 conference [paper](https://www.ijcai.org/proceedings/2020/0125.pdf).
-The codes are used to reproduce experimental results of the proposed Contrastive Attention-basd Gait Encodings (CAGEs) in the [paper](https://arxiv.org/abs/2009.03671).
+The codes are used to reproduce experimental results of the proposed Contrastive Attention-basd Gait Encodings (CAGEs) in the [paper](https://arxiv.org/abs/2009.03671v2).
 
 ![image](https://github.com/Kali-Hac/Locality-Awareness-SGE/blob/master/img/overview.png)
 
@@ -71,7 +71,7 @@ To extend our model to a large RGB-based gait dataset (CASIA B), we exploit pose
 
 Here we thank (rijun.liao@gmail.com) for his contribution of extracting 3D skeleton data from CASIA B.
 
-We provide already pre-processed skeleton data of CASIA B for Cross-View Evaluation (**CVE**) (f=20/30/40) and Condition-based Matching Evaluation (**CME**) (f=50/60/70) on <br\>
+We provide already pre-processed skeleton data of CASIA B for Cross-View Evaluation (**CVE**) (f=20/30/40) and Condition-based Matching Evaluation (**CME**) (f=50/60/70) on <br/>
 https://pan.baidu.com/s/1cRCMkHNnV0VXCgotDqS43w &nbsp; &nbsp; &nbsp; password：&nbsp;  f6x0 <br/>
 Please download the two pre-processed datasets into the directory ``Datasets/``. <br/>
 Note: ``CASIA/`` is used for the **CVE** setup and ``CASIA_match/`` is for the **CME** setup. 
