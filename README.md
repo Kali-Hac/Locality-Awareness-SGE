@@ -114,10 +114,8 @@ python CME-CASIA-B.py --probe_type nm.nm
 Please see ```CME-CASIA-B.py``` for more details.
 
 ## Results
-![results](img/results-1.png)
-![results](img/results-2.png)
-![results](img/results-3.png)
-![results](img/results-4.png)
+![results](img/CAGE-results-1.png)
+![results](img/CAGE-results-2.png)
 
 ## Citation
 If you find this code useful for your research, please cite our paper
