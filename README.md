@@ -1,3 +1,5 @@
+![Python >=3.5](https://img.shields.io/badge/Python->=3.5-blue.svg)
+![PyTorch >=1.6](https://img.shields.io/badge/Tensorflow->=1.10-yellow.svg)
 # A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification
 By Haocong Rao, Siqi Wang, Xiping Hu, Mingkui Tan, Huang Da, Jun Cheng, Bin Hu, and Xinwang, Liu.
 ## Introduction
@@ -110,6 +112,24 @@ python CME-CASIA-B.py --probe_type nm.nm
 
 ```
 Please see ```CME-CASIA-B.py``` for more details.
+
+## Results
+![results](img/results-1.png)
+![results](img/results-2.png)
+![results](img/results-3.png)
+![results](img/results-4.png)
+
+## Citation
+If you find this code useful for your research, please cite our paper
+```bash
+@article{rao2021a2,
+	title="A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification.",
+	author="Haocong {Rao} and Siqi {Wang} and Xiping {Hu} and Mingkui {Tan} and Yi {Guo} and Jun {Cheng} and Bin {Hu} and Xinwang {Liu}",
+	journal="arXiv preprint arXiv:2009.03671v2",
+	year="2021"
+}
+```
+
 
 ## License
 
