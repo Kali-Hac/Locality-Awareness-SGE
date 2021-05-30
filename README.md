@@ -120,6 +120,21 @@ Please see ```CME-CASIA-B.py``` for more details.
 ## Citation
 If you find this code useful for your research, please cite our paper
 ```bash
+@inproceedings{DBLP:conf/ijcai/RaoW0TD0020,
+  author    = {Haocong Rao and
+               Siqi Wang and
+               Xiping Hu and
+               Mingkui Tan and
+               Huang Da and
+               Jun Cheng and
+               Bin Hu},
+  title     = {Self-Supervised Gait Encoding with Locality-Aware Attention for Person
+               Re-Identification},
+  booktitle = {IJCAI},
+  pages     = {898--905},
+  publisher = {ijcai.org},
+  year      = {2020}
+}
 @article{rao2021a2,
 	title="A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification.",
 	author="Haocong {Rao} and Siqi {Wang} and Xiping {Hu} and Mingkui {Tan} and Yi {Guo} and Jun {Cheng} and Bin {Hu} and Xinwang {Liu}",
