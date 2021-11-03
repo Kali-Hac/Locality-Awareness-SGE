@@ -116,7 +116,7 @@ Please see ```CME-CASIA-B.py``` for more details.
 ![results](img/CAGE-results-1.png)
 ![results](img/CAGE-results-2.png)
 
-### Model Size & Computational Complexity
+## Model Size & Computational Complexity
 | Methods                 | # Params | GFLOPs |
 | ----------------------- | -------- | ------ |
 | PoseGait                | 26.80M   | 364.8  |
