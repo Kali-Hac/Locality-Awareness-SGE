@@ -3,7 +3,7 @@
 # A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification
 By Haocong Rao, Siqi Wang, Xiping Hu, Mingkui Tan, Huang Da, Jun Cheng, Xinwang, Liu, and Bin Hu. In [T-PAMI 2021](https://ieeexplore.ieee.org/abstract/document/9466418).
 ## Introduction
-This is the official implementation of the self-supervised gait encoding approach presented by "A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification". The codes are used to reproduce experimental results of the proposed Contrastive Attention-basd Gait Encodings (CAGEs) in the [paper](https://ieeexplore.ieee.org/abstract/document/9466418).
+This is the official implementation of the self-supervised gait encoding approach presented by "A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification". The codes are used to reproduce experimental results of the proposed Contrastive Attention-basd Gait Encodings (CAGEs) in the [**paper**](https://ieeexplore.ieee.org/abstract/document/9466418).
 
 ![image](https://github.com/Kali-Hac/Locality-Awareness-SGE/blob/master/img/overview.png)
 
@@ -115,6 +115,15 @@ Please see ```CME-CASIA-B.py``` for more details.
 ## Results
 ![results](img/CAGE-results-1.png)
 ![results](img/CAGE-results-2.png)
+
+### Model Size & Computational Complexity
+| Methods                 | # Params | GFLOPs |
+| ----------------------- | -------- | ------ |
+| PoseGait                | 26.80M   | 364.8  |
+| [Attention Gait Encoding](https://github.com/Kali-Hac/SGE-LA) | 7.15M    | 37.4   |
+| [SGELA (Ours)](https://github.com/Kali-Hac/Locality-Awareness-SGE)                   | 8.47M    | 7.5    |
+| [SM-SGE](https://github.com/Kali-Hac/SM-SGE)                  | 5.58M    | 22.6   |
+
 
 ## Citation
 If you find this code useful for your research, please cite our paper
