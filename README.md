@@ -174,7 +174,7 @@ If you find this code useful for your research, please cite our paper
 }
 
 ```
-
+More awesome skeleton-based models are collected in our [Awesome-Skeleton-Based-Models](https://github.com/Kali-Hac/Awesome-Skeleton-Based-Models).
 
 ## License
 
