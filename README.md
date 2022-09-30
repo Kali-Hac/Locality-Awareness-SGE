@@ -1,7 +1,7 @@
 ![Python >=3.5](https://img.shields.io/badge/Python->=3.5-blue.svg)
 ![PyTorch >=1.6](https://img.shields.io/badge/Tensorflow->=1.10-yellow.svg)
 # A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification
-By Haocong Rao, Siqi Wang, Xiping Hu, Mingkui Tan, Huang Da, Jun Cheng, Xinwang, Liu, and Bin Hu. In [T-PAMI 2021](https://ieeexplore.ieee.org/abstract/document/9466418).
+By Haocong Rao, Siqi Wang, Xiping Hu, Mingkui Tan, Huang Da, Jun Cheng, Xinwang, Liu, and Bin Hu. In [T-PAMI 2021](https://ieeexplore.ieee.org/abstract/document/9466418) (**Featured Article of Oct. 2022**).
 ## Introduction
 This is the official implementation of the self-supervised gait encoding approach presented by "A Self-Supervised Gait Encoding Approach with Locality-Awareness for 3D Skeleton Based Person Re-Identification". The codes are used to reproduce experimental results of the proposed Contrastive Attention-basd Gait Encodings (CAGEs) in the [**paper**](https://ieeexplore.ieee.org/abstract/document/9466418).
 
